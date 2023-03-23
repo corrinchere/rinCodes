@@ -1,0 +1,151 @@
+/* font-family: 'Montserrat Alternates', sans-serif;
+font-family: 'Nanum Myeongjo', serif;
+font-family: 'Rajdhani', sans-serif;
+font-family: 'Roboto Mono', monospace;
+font-family: 'Rubik', sans-serif;
+font-family: 'Sono', sans-serif; */
+
+body {
+    /* background-color: aquamarine; */
+    margin: 0 auto;
+    background-color: #719276;
+}
+
+.header {
+    /* background-color: antiquewhite; */
+    text-align: right;
+    margin: 0;
+}
+
+#rin-logo {
+    font-family: 'Montserrat Alternates', sans-serif;
+    margin-top: 0;
+    margin-right: 10px;
+    position: fixed;
+    right: 5px;
+    
+   
+}
+
+.main-section {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    
+}
+
+.intro {
+    /* background-color: brown; */
+    padding-left: 50px;
+    padding-top: 30px;
+    
+
+}
+
+.intro-header {
+    font-family: 'Roboto Mono', monospace;
+   
+}
+
+.changing-title {
+    font-family: 'Montserrat Alternates';
+    font-size: 20px;
+ 
+    margin-top: 0px;
+}
+
+.lets-build-section {
+    /* background-color: #719276; */
+    padding-left: 50px;
+    height: 100px;
+}
+
+.lets-build-header {
+    
+    
+}
+
+.projects-section {
+    text-align: center;
+    background-color: #fff;
+    padding-bottom: 50px;
+
+}
+
+.projects-header {
+    padding-top: 35px;
+}
+
+.project-images {
+    width: 275px;
+    border-radius: 5px;
+    margin: 20px 20px;
+}
+
+.about-me {
+    background-color: #fff;
+    padding: 50px 50px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.aboutme-links {
+    font-weight: 800;
+    /* text-decoration: aquamarine 2px solid; */
+
+}
+
+.aboutme-image-section {
+    background-color: #617191;
+    width: 300px;
+    height: 300px;
+}
+
+.form-section {
+    padding: 50px;
+}
+
+.form-flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.form {
+    background-color: #fff;
+    width: 300px;
+    height: 300px;
+}
+
+.skills-section {
+    padding: 20px 50px;
+}
+
+.skill-header {
+    text-align: center;
+
+}
+
+.skill-display {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.skills {
+    font-size: 20px;
+}
+
+.footer {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(55, 68, 55);
+    height: 50px;
+}
+
+.footer-disclosure {
+    padding-right: 5px;
+    position: absolute;
+    right: 0;
+    color: #fff;
+    
+
+}
