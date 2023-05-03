@@ -8,13 +8,14 @@ font-family: 'Sono', sans-serif; */
 body {
     /* background-color: aquamarine; */
     margin: 0 auto;
-    background-color: #719276;
+    background-color: #bfdbc4;
 }
 
 .header {
     /* background-color: antiquewhite; */
     text-align: right;
     margin: 0;
+    background-color: #fff;
 }
 
 #rin-logo {
@@ -22,58 +23,296 @@ body {
     margin-top: 0;
     margin-right: 10px;
     position: fixed;
-    right: 5px;
-    
-   
+    right: 5px;  
 }
 
 .main-section {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-weight: 400;
-    
 }
 
 .intro {
     /* background-color: brown; */
-    padding-left: 50px;
-    padding-top: 30px;
-    
-
+    padding-top: 20px;
+    padding-bottom: 50px;
+    background-color: #fff;
+    margin-bottom: 0px;
 }
 
-.intro-header {
+#intro-header {
     font-family: 'Roboto Mono', monospace;
-   
+    text-align: center;
+    margin-top: 80px;
 }
 
 .changing-title {
     font-family: 'Montserrat Alternates';
     font-size: 20px;
- 
+    text-align: center;
     margin-top: 0px;
 }
 
-.lets-build-section {
-    /* background-color: #719276; */
-    padding-left: 50px;
-    height: 100px;
+#my-work-section {
+    padding-top: 10px;
+    display: none;
+    max-width: 475px;
+    height: 300px;
+    border-radius: 5px;
+    font-size: 30px;
+    text-align: center;
 }
 
+#me-personally-div {
+    display: none;
+    padding-top: 20px;
+    display: none;
+    max-width: 475px;
+    height: 300px;
+    border-radius: 5px;
+    font-size: 30px;
+    text-align: center;
+}
+
+/* SKILLS BANNER */
+
+
+
+
+/* END BANNER */
+
+
+
+
+
+/* INPUT FORM SECTION */
+
+.lets-build-section {
+   padding: 80px 20px;
+}
+
+
 .lets-build-header {
+    text-align: center; 
+    font-size: 35px;
+    margin: 0 0 50px 0;
+
+}
+
+.build-steps {
+    color: #2b2928;
+    font-size: 26px;
+    /* background-color: cornflowerblue; */
+    width: 80%;
+    margin: 20px auto 30px auto;
+    /* margin-left: 80px; */
+    
+}
+
+.step-title {
+    color: #2D6363;
+    font-size: 24px;
     
     
+}
+
+.build-forms {
+    /* background-color: chocolate; */
+    width: 900px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.build-forms-three {
+    /* background-color: chocolate; */
+    width: 900px;
+    margin: auto;
+    text-align: center;
+    /* display: flex;
+    justify-content: space-between; */
+}
+
+.div-input {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+}
+
+.div-notes {
+    /* background-color: cornflowerblue; */
+    width: 900px;
+    
+}
+
+#input-name {
+   background-color: transparent;
+    width: 300px;
+    border-radius: 5px;
+    border: 3px solid #2D6363;
+    height: 30px; 
+    color: #2b2928;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+#input-email {
+    background-color: transparent;
+    /* padding: 10px 0; */
+    width: 500px;
+    border-radius: 5px; 
+    border: 3px solid #2D6363;
+    height: 30px;  
+    color: #2b2928;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 20px;   
+}
+
+#input-notes {
+    background-color: transparent;
+    /* padding: 10px 0; */
+    width: 900px;
+    height: 70px;
+    box-sizing: border-box;
+    border: 3px solid #2D6363;
+    border-radius: 5px;
+    margin-bottom: 20px;  
+    color: #2b2928;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 20px; 
+    resize: none;
+}
+
+
+
+.input-label {
+    /* background-color: chartreuse; */
+    width: 175px;
+    display: block;
+    position: relative;
+    padding-left: 60px;
+    margin: 10px 0 40px 0;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: 700;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+.input-label input {
+    /* font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px; */
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.radiomark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 34px;
+    width: 34px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+  }
+
+  .input-label:hover input ~ .radiomark {
+    background-color: #8ab191;
+  }
+
+  .input-label input:checked ~ .radiomark {
+    background-color: #8ab191;
+  }
+
+  .radiomark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  .input-label input:checked ~ .radiomark:after {
+    display: block;
+  }
+
+  .input-label .radiomark:after {
+    top: 7px;
+   left: 7px;
+   width: 20px;
+   height: 20px;
+   border-radius: 50%;
+   background: #fff;
+}
+
+input[type=text] {
+    padding: 10px 0 5px 0px;
+}
+
+#input-name[type=text]:focus {
+    background-color: #fff;
+}
+
+#input-email[type=text]:focus {
+    background-color: #fff;
+}
+
+#input-notes[type=textbox]:focus {
+    background-color: #fff;
+}
+
+::placeholder {
+    color: #798E7D;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    padding-left: 10px;
+    font-style: italic;
+}
+
+#submit-button {
+    margin-top: 40px;
+    background-color: #2D6363;
+    border: none;
+    border-radius: 5px;
+    padding: 20px;
+    width: 250px;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    box-shadow: #1d3333 0px 5px 8px;
+    cursor: pointer;
+}
+
+
+ 
+/* END OF INPUT FORM SECTION */
+
+
+
+.rinheader {
+    font-size: 35px;
 }
 
 .projects-section {
     text-align: center;
     background-color: #fff;
-    padding-bottom: 50px;
-
+    padding: 20px 0px 100px 0px;
 }
 
 .projects-header {
+    color: #2b2928;
     padding-top: 35px;
+    font-size: 30px;
 }
+
 
 .project-images {
     width: 275px;
@@ -81,24 +320,55 @@ body {
     margin: 20px 20px;
 }
 
+.project-images:hover {
+    transform: scale(1.1);
+    transition: 1.1s;
+    box-shadow: 5px 10px 20px #6e6e6e;
+
+}
+
+/* START ABOUT ME STYLING */
+
 .about-me {
     background-color: #fff;
-    padding: 50px 50px;
-    display: flex;
-    justify-content: space-between;
+    padding: 30px 30px;
+}
 
+.about-me-container {
+    width: 90%;
+    margin: auto;
+    padding: 30px;
+    background-color: #fff;
+    
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.aboutme-para {
+    font-size: 30px;
 }
 
 .aboutme-links {
     font-weight: 800;
-    /* text-decoration: aquamarine 2px solid; */
-
+    cursor: pointer;
+    color: darkslategray;
+    text-decoration: underline;
 }
 
-.aboutme-image-section {
-    background-color: #617191;
-    width: 300px;
+.aboutme-links:hover {
+    font-weight: 800;
+    cursor: pointer;
+    color: #69a1a1;
+    text-decoration: underline;
+}
+
+
+
+#image-change {
+    max-width: 475px;
     height: 300px;
+    border-radius: 5px;
 }
 
 .form-section {
@@ -108,6 +378,8 @@ body {
 .form-flex-container {
     display: flex;
     justify-content: space-between;
+    width: 80%;
+    margin: auto;
 }
 
 
@@ -117,35 +389,364 @@ body {
     height: 300px;
 }
 
+
+
 .skills-section {
+    color : #354135;;
+   margin-bottom: 0;
     padding: 20px 50px;
+    
 }
 
 .skill-header {
     text-align: center;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin-top: 0;
 
 }
 
 .skill-display {
-    display: flex;
+    display: grid;
     justify-content: space-evenly;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    text-align: center;
 }
 
 .skills {
     font-size: 20px;
+    margin: 10px auto;
 }
 
-.footer {
+footer {
     font-family: 'Roboto', sans-serif;
-    background-color: rgb(55, 68, 55);
-    height: 50px;
+    background-color: #354135;
+    height: 300px;
+    position: relative;
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #fff;
 }
 
 .footer-disclosure {
+    font-family: 'Montserrat Alternates', sans-serif;
     padding-right: 5px;
     position: absolute;
-    right: 0;
+    right: 10px;
+    bottom: 0px;
     color: #fff;
+    font-size: 12px;
     
+
+}
+
+.footer-div-container {
+    
+    width: 90%;
+    margin: auto;
+    display: flex;
+}
+
+.foot-divs {
+    height: 250px;
+    width: 50%;
+    margin: auto;
+}
+
+.left-footer {
+    /* background-color: darkturquoise; */
+    border-right: #869999 solid 1px;
+}
+
+.footer-header {
+    font-family: 'Montserrat Alternates', sans-serif;
+    
+    font-size: 30px;
+}
+
+.contact-me {
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.contact-links{
+    text-decoration: none;
+    color: #fff;
+}
+
+.contact-links:hover {
+    color: #869999;
+}
+
+
+/* PURPLE BACKGROUND SIZES */
+@media only screen and (max-width: 1000px) {
+    .skills-section {
+        padding: 20px 40px;
+        
+    }
+    
+    .skill-header {
+        text-align: center;
+        letter-spacing: 1px;
+        font-weight: 400;
+    
+    }
+    
+    .skill-display {
+        display: grid;
+        justify-content: space-evenly;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        text-align: center;
+    }
+    
+    .skills {
+        font-size: 18px;
+    }
+
+    /* INPUT FORM SECTION */
+
+  
+ 
+ .build-forms {
+     width: 700px;
+     margin: auto;
+     text-align: center;
+     display: flex;
+     justify-content: space-between;
+ }
+ 
+ .build-forms-three {
+     width: 700px;   
+ }
+ 
+ .div-notes {
+     width: 700px;
+ }
+ 
+ #input-name {
+     width: 250px;
+ }
+ 
+ #input-email {
+     width: 400px;
+ }
+ 
+ #input-notes {
+     width: 700px; 
+ }
+ /* END OF INPUT FORM SECTION */
+ 
+}
+
+/* BROWN BACKGROUND */
+@media only screen and (max-width: 900px) {
+    body {
+    }
+
+
+    /* START ABOUT ME STYLING */
+    .about-me {
+        padding: 30px 20px;
+    }
+
+    .about-me-container {
+        align-items: center;
+        padding: 30px;
+        display: flex;
+        flex-direction: column-reverse;
+
+    }
+
+    .aboutme-para {
+        font-size: 30px;
+        text-align:center;
+    }
+
+/* INPUT FORM SECTION */
+ 
+ .build-forms {
+    width: 600px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.build-steps {
+    color: #2b2928;
+    font-size: 22px;
+    width: 90%;
+    margin: 20px auto 10px auto;
+    /* margin-left: 80px; */
+    
+}
+
+.build-forms-three {
+    width: 600px;   
+}
+
+.div-input {
+    margin-top: 20px;
+}
+
+.div-notes {
+    width: 600px;
+}
+
+#input-name {
+   
+    width: 200px;
+}
+
+#input-email {
+    width: 375px;
+}
+
+#input-notes {
+    width: 600px; 
+}
+
+
+.input-label {
+    width: 200px;
+    display: block;
+    position: relative;
+    padding-left: 40px;
+    margin: 10px 0 40px 0;
+  }
+
+.radiomark {
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+  }
+
+  .input-label .radiomark:after {
+    top: 4px;
+   left: 4px;
+   width: 17px;
+   height: 17px;
+}
+/* END OF INPUT FORM SECTION */
+
+}
+
+
+@media only screen and (max-width: 650px) {
+
+    .skill-display {
+        display: grid;
+        justify-content: space-evenly;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        text-align: center;
+    }
+
+    .skills-section {
+        padding: 20px 10px;
+        margin-bottom: 0;
+    }
+
+    
+    .skills {
+        font-size: 15px;
+        width: 100px;
+        margin: auto;
+        text-align: center;
+    }
+
+    .lets-build-section {
+        padding: 50px 20px;
+     }
+
+    .build-forms {
+        width: 90%;
+        margin: auto;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    
+    .build-steps {
+        color: #2b2928;
+        font-size: 22px;
+        width: 80%;
+        margin: 20px auto 20px auto;
+        text-align: center;
+
+        /* margin-left: 80px; */
+        
+    }
+    
+    .build-forms-three {
+        width: 400px;   
+    }
+
+    
+    
+    .div-notes {
+        width: 400px;
+    }
+
+    .div-input {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    #image-change {
+        max-height: 250px;
+        border-radius: 5px;
+    }
+    
+
+    #input-name {
+        width: 400px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    
+    #input-email {
+        width: 400px;
+    }
+    
+    #input-notes {
+        width: 400px;
+        height: 200px;
+    }
+    
+    
+    .input-label {
+        width: 200px;
+        margin: auto;
+        position: relative;
+        padding-left: 40px;
+        margin: 10px 0 40px 0;
+      }
+    
+    .radiomark {
+        top: 0;
+        left: 0;
+        height: 25px;
+        width: 25px;
+      }
+    
+      .input-label .radiomark:after {
+        top: 4px;
+       left: 4px;
+       width: 17px;
+       height: 17px;
+    }
+
+
 
 }

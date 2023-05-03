@@ -5,9 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,400;0,500;1,400&family=Nanum+Myeongjo:wght@400;700;800&family=Rajdhani&family=Roboto+Mono&family=Roboto:wght@300;400&family=Rubik&family=Sono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,400;0,500;1,400&family=Nanum+Myeongjo:wght@400;700;800&family=Rajdhani&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono&family=Roboto:wght@300;400&family=Rubik&family=Sono&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
     <title>rin.codes</title>
 </head>
@@ -18,85 +17,162 @@
     </header>
     <main class="main-section">
         <div class="intro">
-            <h1 class="intro-header">Hello user... I'm Rin,</h1>
-            <p class="changing-title">a frontend developer and designer.</p>
+            <h1 id="intro-header">Hello user... I'm Rin,</h1>
+            <p class="changing-title">developer and designer</p>
         </div>
 
-        <div class="lets-build-section">
-            <h2 class="lets-build-header">Let's build</h2>
-            <h3 class="website-header">WEBSITE</h3>
+        
 
-        </div>
-
-        <div class="about-me">
-            <div>
-                <h2>the RIN behind the code</h2>
-                <p>Here's a little <a class="aboutme-links" href="">about me,</a href=""><br> <a class="aboutme-links" href="">my work,</a> and howt to <a class="aboutme-links" href="">get in touch</a>.</p>
-            </div>
-            <div class="aboutme-image-section">
-
-            </div>
-
-        </div>
 
         <div class="skills-section">
-            <h2 class="skill-header">skill set</h2>
+            <h2 class="skill-header">SKILL SET</h2>
             <div class="skill-display">
-                <p class="skills">listed skills</p>
-                <p class="skills">listed skills</p>
-                <p class="skills">listed skills</p>
-                <p class="skills">listed skills</p>
-                <p class="skills">listed skills</p>
-                <p class="skills">listed skills</p>
-                <p class="skills">listed skills</p>
-                <p class="skills">listed skills</p>
+                <p class="skills">HTML5</p>
+                <p class="skills">CSS3</p>
+                <p class="skills">JavaScript</p>
+                <p class="skills">React</p>
+                <p class="skills">Responsive Design</p>
+                <p class="skills">Web Accessibilty</p>
+                <p class="skills">Email Development</p>
+                <p class="skills">Adobe PhotoShop</p>
+                <p class="skills">Figma</p>
+                <p class="skills">WordPress</p>
+                <p class="skills">Webflow</p>
+                <p class="skills">Adobe XD</p>
+                
+
             </div>
         </div>
 
-       
+        <!-- START ABOUT ME SECTION -->
+         <div class="about-me">
 
-        <div class="projects-section">
-            <h2 class="projects-header">PROJECTS & DESIGNS
-            </h2>
-            <img src="images/arcade.png" alt="" class="project-images">
-            
-            <img src="images/danisTaxes.png" alt="" class="project-images">
-            
-            <img src="images/pokedex.png" alt="" class="project-images">
-
-        </div>
-
-        <div class="form-section">
-            <div class="form-flex-container">
+            <div class="about-me-container">
                 <div>
-                    <h2>HAVE ANY QUESTIONS?</h2>
-                    <p>NEED A CUSTOM WEBSITE BUILT?</p>
-                    
-                    <p>CAN'T WAIT TO HEAR FROM YOU.</p>
+                    <h2 class="rinheader">the RIN behind the code</h2>
+                    <p class="aboutme-para">Here's a little <span class="aboutme-links" id="about-me-image">about me</span>,<br> <span id="my-work-image" class="aboutme-links">my work</span>, and how to <br><a id="get-in-touch-image" class="aboutme-links" href="#build-form">get in touch</a>.</p>
+                </div>
+                <div class="aboutme-image-section">
+                    <img id="image-change" src="images/red-rocks-image.jpeg">
 
                 </div>
-                <div class="form">
-                    <form >
-
-                    </form>
-
+                <div id="my-work-section">
+                    <p class="my-work-para">Employed at <a class="aboutme-links" href="https://www.ellevest.com/">Ellevest</a> I created many pages using Webflow, and was lead developer for <a href="https://www.novelly.org/" class="aboutme-links">Novelly</a> View my <a href="#project-skip-to" class="aboutme-links">personal projects</a>!</p>
                 </div>
-
+                <div id="me-personally-div">
+                    <p class="my-work-para">Born and raised in the SF Bay Area.
+                        I have a background in Graphic design and fine art. </p>
+                </div>
             </div>
 
+        </div>
+        <!-- END ABOUT ME SECTION -->
+
+        <div class="lets-build-section">
+            <h2 class="lets-build-header" id="build-form">LET'S BUILD</h2>
+
+                <h3 class="build-steps">STEP ONE: <span class="step-title">What kind of build do you need?</span></h3>
+
+                <form class="build-forms" id="build-type-form">
+                    
+                    <label for="raw-code" class="input-label">RAW CODE
+                        <input type="radio" id="raw-code" name="code-type" value="raw code">
+                        <span class="radiomark"></span>
+                    </label>
+
+                    <label for="webflow" class="input-label">WEBFLOW
+                        <input type="radio" id="webflow" name="code-type" value="webflow">
+                        <span class="radiomark"></span>
+                    </label>
+
+                    <label for="everything" class="input-label">EVERYTHING
+                        <input type="radio" id="everything" name="code-type" value="everything">
+                        <span class="radiomark"></span>
+                    </label>
+
+                </form>
+
+                <h3 class="build-steps">STEP TWO: <span class="step-title">What size website?</span></h3>
+
+                <form class="build-forms" id="build-size-form">
+
+                    
+                    <label for="one-page" class="input-label">1 PAGE
+                        <input type="radio" id="one-page" name="build-size" value="1 page">
+                        <span class="radiomark"></span>
+                    </label>
+                    
+                    <label for="three-page" class="input-label">3+ PAGES
+                        <input type="radio" id="three-page" name="build-size" value="3+ pages">
+                        <span class="radiomark"></span>
+                    </label>
+
+                    <label for="six-page" class="input-label">6+ PAGES
+                        <input type="radio" id="six-page" name="build-size" value="6+ pages">
+                        <span class="radiomark"></span>
+                    </label>
+
+                </form>
+
+                <h3 class="build-steps">STEP THREE: <span class="step-title">Let's get in touch.</span></h3>
+
+                <form class="build-forms-three" id="build-input-form"> 
+                    <div class="div-input">
+                        <input type="text" id="input-name" name="client-details" placeholder="Your name">
+                        <input type="text" id="input-email" name="client-details" placeholder="Your email">
+                    </div>
+                    <div class="div-notes">
+                        <!-- <input type="textbox" id="input-notes" name="client-details" placeholder="Leave any notes you'd like for me to know about this project."><br> -->
+
+                        <textarea type="textbox" id="input-notes" name="client-details" rows="8" cols="50" placeholder="Leave any notes you'd like for me to know about this project."></textarea><br>
+
+                        <input type="submit" value="LET'S DO IT" id="submit-button">
+                    </div>
+                </form>
+
+                
 
         </div>
 
        
 
         
-
        
 
+        <div class="projects-section">
+            <h2 id="project-skip-to"  class="projects-header">PROJECTS & DESIGNS
+            </h2>
+            <a class="image-link" href="https://corrinchere.github.io/finalProject/index.html" target="_blank"><img src="images/arcade.png" alt="" class="project-images"></a>
+            
+            <a class="image-link" href="https://corrinchere.github.io/danisbusiness/" target="_blank"><img src="images/danisTaxes.png" alt="" class="project-images"></a>
+            
+            <a class="image-link" href="" target="_blank"><img src="images/pokedex.png" alt="" class="project-images"></a>
+
+        </div>
+
     </main>
-    <footer class="footer">
+    <footer class="footer" id="footer">
+
+        <div class="footer-div-container">
+            <div class="foot-divs left-footer">
+                <h2 class="footer-header">rin.codes</h2>
+               
+                <a class="contact-links" href="mailto:hello@rin.codes" target="_blank"><p class="contact-me">EMAIL</p></a>
+                
+                <a class="contact-links" href="https://www.linkedin.com/in/corrin-smith-251374157/" target="_blank"><p class="contact-me">LINKEDIN</p></a>
+                
+                <a class="contact-links" href="https://github.com/corrinchere/corrinchere" target="_blank"><p class="contact-me">GITHUB</p></a>
+
+            </div>
+            <div class="foot-divs right-footer">
+
+            </div>
+        </div>
+
         <p class="footer-disclosure">designed & developed by rin.codes &#169;</p>
 
     </footer>
+    <script src="script.js"></script>
 </body>
+
 </html>
