@@ -17,8 +17,10 @@
     </header>
     <main class="main-section">
         <div class="intro">
-            <h1 id="intro-header">Hello user... I'm Rin,</h1>
-            <p class="changing-title">developer and designer</p>
+            <div class="intro-container">
+                <h1 id="intro-header">Hello user... I'm Rin,</h1>
+                <p class="changing-title">developer and designer</p>
+            </div>
         </div>
 
         
@@ -32,9 +34,9 @@
                 <p class="skills">JavaScript</p>
                 <p class="skills">React</p>
                 <p class="skills">Responsive Design</p>
-                <p class="skills">Web Accessibilty</p>
-                <p class="skills">Email Development</p>
-                <p class="skills">Adobe PhotoShop</p>
+                <p class="skills">Web Accessibility</p>
+                <p class="skills">HTML Emails</p>
+                <p class="skills">PhotoShop</p>
                 <p class="skills">Figma</p>
                 <p class="skills">WordPress</p>
                 <p class="skills">Webflow</p>
@@ -50,14 +52,14 @@
             <div class="about-me-container">
                 <div>
                     <h2 class="rinheader">the RIN behind the code</h2>
-                    <p class="aboutme-para">Here's a little <span class="aboutme-links" id="about-me-image">about me</span>,<br> <span id="my-work-image" class="aboutme-links">my work</span>, and how to <br><a id="get-in-touch-image" class="aboutme-links" href="#build-form">get in touch</a>.</p>
+                    <p class="aboutme-para">Here's a little <span class="aboutme-links" id="about-me-image">about me</span>,<br> <span id="my-work-image" class="aboutme-links">my work</span>, and how to <br><a id="get-in-touch-image" class="aboutme-links" href="#build-section">get in touch</a>.</p>
                 </div>
                 <div class="aboutme-image-section">
                     <img id="image-change" src="images/red-rocks-image.jpeg">
 
                 </div>
                 <div id="my-work-section">
-                    <p class="my-work-para">Employed at <a class="aboutme-links" href="https://www.ellevest.com/">Ellevest</a> I created many pages using Webflow, and was lead developer for <a href="https://www.novelly.org/" class="aboutme-links">Novelly</a> View my <a href="#project-skip-to" class="aboutme-links">personal projects</a>!</p>
+                    <p class="my-work-para">Employed at <a class="aboutme-links" href="https://www.ellevest.com/" target="_blank">Ellevest</a> I created many pages using Webflow, and was lead developer for <a href="https://www.novelly.org/" class="aboutme-links" target="_blank">Novelly</a> View my <a href="#project-skip-to" class="aboutme-links">personal projects</a>!</p>
                 </div>
                 <div id="me-personally-div">
                     <p class="my-work-para">Born and raised in the SF Bay Area.
@@ -68,6 +70,77 @@
         </div>
         <!-- END ABOUT ME SECTION -->
 
+        <!-- START NEW FORM SECTION  -->
+        <div class="new-build-section">
+            <h2 id="build-section">LET'S BUILD</h2>
+            <form action="https://formsubmit.co/f02d8510c1e7ccddeb52803a6c1ace25" method="POST" class="new-build-form">
+                <input type="hidden" name="_subject" value="New Project Form Submission!">
+                <input type="hidden" name="_autoresponse" value="Thank you for your form submission. You will receive another email shortly that details the next step in this process. Talk soon!">
+                <fieldset class="fieldset">
+                    <h3 class="step-header">STEP ONE: <span class="step-title">What kind of build?</span></h3>
+                    
+                    <div class="display-options">
+                        <label class="label-styling" for="rawcode">Raw code only
+                            <input type="radio" id="rawcode" class="radio-type" name="codetype"  value="Raw code only" required checked>
+                            <span class="radiobox"></span>
+                        </label>
+
+                        
+                        <label class="label-styling" for="webflow">Webflow
+                            <input type="radio" id="webflow" class="radio-type" name="codetype" value="Webflow" >
+                            <span class="radiobox"></span>
+                        </label>
+
+                        
+                        <label class="label-styling" for="everything">Everything
+                            <input type="radio" id="everything" class="radio-type" name="codetype" value="Everything">
+                            <span class="radiobox"></span>
+                        </label>
+                    </div>
+
+                </fieldset>
+                <fieldset class="fieldset">
+                    <h3 class="step-header">STEP TWO: <span class="step-title">How big of a build?</span></h3>
+                    
+                    <div class="display-options">
+                        <label for="onepage" class="label-styling" >1 page
+                            <input type="radio" id="onepage" class="radio-size" name="pagesize" value="1 page" required checked>
+                        <span class="radiobox"></span>
+                        </label>
+
+                        
+                        <label for="threepage" class="label-styling" >3+ pages
+                            <input type="radio" id="threepage" class="radio-size" name="pagesize" value="3+ pages" >
+                        <span class="radiobox"></span>
+                        </label>
+
+                        
+                        <label for="sixpluspage" class="label-styling">6+ pages
+                            <input type="radio" id="sixpluspage" class="radio-size" name="pagesize" value="6+ pages" >
+                        <span class="radiobox"></span>
+                        </label>
+                    </div>
+
+
+                </fieldset>
+                <fieldset class="fieldset">
+                    <h3 class="step-header">STEP THREE: <span class="step-title">Let's get in touch.</span></h3>
+                    <div class="name-email-div">
+                        <input type="text" class="info input-width" name="nameinfo" placeholder="Your name" required>
+                        <input type="email" class="info input-width" name="emailinfo" placeholder="Your email" required>
+                    </div>
+                    <br>
+                    <textarea type="text" class="info textarea-width" placeholder="Any notes you'd like me to know about this project." name="notesinfo" rows="10"></textarea>
+                    <br><button type="submit" class="submit-btn">GET STARTED</button>
+
+                </fieldset>
+            </form>
+        </div>
+        <!-- END NEW FORM SECTION -->
+
+
+        <!-- START OLD FORM SECTION -->
+        <!--
         <div class="lets-build-section">
             <h2 class="lets-build-header" id="build-form">LET'S BUILD</h2>
 
@@ -116,13 +189,12 @@
 
                 <h3 class="build-steps">STEP THREE: <span class="step-title">Let's get in touch.</span></h3>
 
-                <form class="build-forms-three" id="build-input-form"> 
+                <form class="build-forms-three" id="build-input-form" onsubmit="sendEmail(); reset(); return false;"> 
                     <div class="div-input">
-                        <input type="text" id="input-name" name="client-details" placeholder="Your name">
-                        <input type="text" id="input-email" name="client-details" placeholder="Your email">
+                        <input type="text" id="input-name" name="client-details" placeholder="Your name" required>
+                        <input type="email" id="input-email" name="client-details" placeholder="Your email" required>
                     </div>
-                    <div class="div-notes">
-                        <!-- <input type="textbox" id="input-notes" name="client-details" placeholder="Leave any notes you'd like for me to know about this project."><br> -->
+                    <div class="div-notes">his project."><br> 
 
                         <textarea type="textbox" id="input-notes" name="client-details" rows="8" cols="50" placeholder="Leave any notes you'd like for me to know about this project."></textarea><br>
 
@@ -132,9 +204,8 @@
 
                 
 
-        </div>
-
-       
+        </div> 
+    -->
 
         
        
@@ -173,6 +244,9 @@
 
     </footer>
     <script src="script.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+
 </body>
 
 </html>

@@ -1,14 +1,10 @@
-/* font-family: 'Montserrat Alternates', sans-serif;
-font-family: 'Nanum Myeongjo', serif;
-font-family: 'Rajdhani', sans-serif;
-font-family: 'Roboto Mono', monospace;
-font-family: 'Rubik', sans-serif;
-font-family: 'Sono', sans-serif; */
+
 
 body {
     /* background-color: aquamarine; */
     margin: 0 auto;
     background-color: #bfdbc4;
+    
 }
 
 .header {
@@ -24,6 +20,7 @@ body {
     margin-right: 10px;
     position: fixed;
     right: 5px;  
+    z-index: 5;
 }
 
 .main-section {
@@ -31,19 +28,53 @@ body {
     font-weight: 400;
 }
 
+.intro-container {
+    overflow: hidden;
+    width: fit-content;
+    margin: auto;
+
+}
+
 .intro {
-    /* background-color: brown; */
+    background-color: #fff;
     padding-top: 20px;
     padding-bottom: 50px;
-    background-color: #fff;
     margin-bottom: 0px;
+    position: relative;
+    align-items: center;
 }
 
 #intro-header {
+
+    background-color: #fff;
     font-family: 'Roboto Mono', monospace;
     text-align: center;
     margin-top: 80px;
+    position: relative;
+    font-size: 35px;
 }
+
+#intro-header::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    border-left: 4px solid #354135;
+    animation: animate 6s steps(22) infinite;
+}
+@keyframes animate{
+    40%, 60%{
+        left: 100%;
+    }
+    100%{
+        left: 0%;
+    }
+}
+
+
 
 .changing-title {
     font-family: 'Montserrat Alternates';
@@ -51,6 +82,7 @@ body {
     text-align: center;
     margin-top: 0px;
 }
+
 
 #my-work-section {
     padding-top: 10px;
@@ -73,20 +105,177 @@ body {
     text-align: center;
 }
 
-/* SKILLS BANNER */
+
+/* NEW BUILD FORM STYLING */
+
+.new-build-section{
+    text-align: center;
+    padding: 20px;
+}
+
+#build-section {
+    font-size: 30px;
+}
+
+.fieldset {
+    max-width: 900px;
+    width: 80%;
+    margin: auto;
+    border: none;
+    padding: none;
+}
+
+.step-header {
+    font-size: 25px;
+}
+
+.display-options {
+    display: flex;
+    justify-content: space-around;
+}
+
+.label-styling {
+    width: 30%;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default radio button */
+  .label-styling input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* Create a custom radio button */
+  .radiobox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 34px;
+    width: 34px;
+    background-color: #bfdbc4;
+    border-radius: 50%;
+    border: 3px solid #fff;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .label-styling:hover input ~ .radiobox {
+    background-color: #8ab191;
+    
+  }
+
+  .label-styling:hover {
+      color:#fff;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .label-styling input:checked ~ .radiobox {
+    background-color: #8ab191;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .radiobox:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .label-styling input:checked ~ .radiobox:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .label-styling .radiobox:after {
+       top: 7px;
+      left: 7px;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: white;
+  }
+
+  .step-title {
+    color: #2D6363;
+    font-size: 24px;
+}
+
+.info {
+    border: solid 3px #2D6363;
+    border-radius: 5px;
+    resize: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    background-color: transparent;
+}
+
+.name-email-div {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-width {
+    width: 45%;
+    height: 35px;
+    font-size: 18px;
+    padding-left: 5px;
+}
+
+.textarea-width {
+    width: 89%;
+    margin: 0;
+    font-size: 18px;
+    padding-left: 5px;
+}
+
+.info[type=text]:focus {
+    background-color: #fff;
+}
+
+.info[type=email]:focus {
+    background-color: #fff;
+}
+
+::placeholder{
+    font-style: italic;
+}
+
+.submit-btn {
+    width: 225px;
+    margin-top: 40px;
+    background-color: #2D6363;
+    border: none;
+    border-radius: 5px;
+    padding: 18px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    box-shadow: #1d3333 0px 5px 8px;
+    cursor: pointer; 
+}
+
+.submit-btn:hover {
+    background-color: #689494;
+    transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transition: ease-in-out .9s;
+}
 
 
+/* INPUT FORM SECTION 
 
-
-/* END BANNER */
-
-
-
-
-
-/* INPUT FORM SECTION */
-
-.lets-build-section {
+ .lets-build-section {
    padding: 80px 20px;
 }
 
@@ -101,10 +290,8 @@ body {
 .build-steps {
     color: #2b2928;
     font-size: 26px;
-    /* background-color: cornflowerblue; */
     width: 80%;
     margin: 20px auto 30px auto;
-    /* margin-left: 80px; */
     
 }
 
@@ -116,7 +303,6 @@ body {
 }
 
 .build-forms {
-    /* background-color: chocolate; */
     width: 900px;
     margin: auto;
     text-align: center;
@@ -125,12 +311,9 @@ body {
 }
 
 .build-forms-three {
-    /* background-color: chocolate; */
     width: 900px;
     margin: auto;
     text-align: center;
-    /* display: flex;
-    justify-content: space-between; */
 }
 
 .div-input {
@@ -141,7 +324,6 @@ body {
 }
 
 .div-notes {
-    /* background-color: cornflowerblue; */
     width: 900px;
     
 }
@@ -160,7 +342,6 @@ body {
 
 #input-email {
     background-color: transparent;
-    /* padding: 10px 0; */
     width: 500px;
     border-radius: 5px; 
     border: 3px solid #2D6363;
@@ -173,7 +354,6 @@ body {
 
 #input-notes {
     background-color: transparent;
-    /* padding: 10px 0; */
     width: 900px;
     height: 70px;
     box-sizing: border-box;
@@ -190,7 +370,6 @@ body {
 
 
 .input-label {
-    /* background-color: chartreuse; */
     width: 175px;
     display: block;
     position: relative;
@@ -206,9 +385,6 @@ body {
   }
 
 .input-label input {
-    /* font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    font-size: 26px; */
     position: absolute;
     opacity: 0;
     cursor: pointer;
@@ -290,10 +466,9 @@ input[type=text] {
     box-shadow: #1d3333 0px 5px 8px;
     cursor: pointer;
 }
-
-
  
-/* END OF INPUT FORM SECTION */
+ 
+ END OF INPUT FORM SECTION */
 
 
 
@@ -366,8 +541,8 @@ input[type=text] {
 
 
 #image-change {
-    max-width: 475px;
-    height: 300px;
+    
+    width: 400px;
     border-radius: 5px;
 }
 
@@ -512,34 +687,6 @@ footer {
     /* INPUT FORM SECTION */
 
   
- 
- .build-forms {
-     width: 700px;
-     margin: auto;
-     text-align: center;
-     display: flex;
-     justify-content: space-between;
- }
- 
- .build-forms-three {
-     width: 700px;   
- }
- 
- .div-notes {
-     width: 700px;
- }
- 
- #input-name {
-     width: 250px;
- }
- 
- #input-email {
-     width: 400px;
- }
- 
- #input-notes {
-     width: 700px; 
- }
  /* END OF INPUT FORM SECTION */
  
 }
@@ -568,185 +715,431 @@ footer {
         text-align:center;
     }
 
-/* INPUT FORM SECTION */
- 
- .build-forms {
-    width: 600px;
-    margin: auto;
-    text-align: center;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.build-steps {
-    color: #2b2928;
-    font-size: 22px;
-    width: 90%;
-    margin: 20px auto 10px auto;
-    /* margin-left: 80px; */
+    /* INPUT FORM SECTION */
     
+    
+    /* END OF INPUT FORM SECTION */
+
+    }
+
+
+    @media only screen and (max-width: 650px) {
+
+        body {
+            background-color: thistle;
+        }
+
+        .skill-display {
+            display: grid;
+            justify-content: space-evenly;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            text-align: center;
+        }
+
+        .skills-section {
+            padding: 20px 10px;
+            margin-bottom: 0;
+        }
+
+        
+        .skills {
+            font-size: 15px;
+            width: 100px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .rinheader {
+            font-size: 30px;
+        }
+
+        .about-me {
+            background-color: #fff;
+            padding: 20px 10px;
+        }
+
+        .aboutme-para {
+            font-size: 25px;
+        }
+
+        .about-me-container {
+            width: 80%;
+        
+        }
+        
+    
+        #image-change {
+            width: 375px;
+            border-radius: 5px;
+        }
+        
+
+        #intro-header {
+            font-size: 30px;
+        }
+
+        .fieldset {
+            max-width: 95%;
+        }
+    
+    
+    
+        .display-options {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .label-styling {
+            width: 100%;
+            position: relative;
+            padding-left: 35px;
+            margin: 15px 0;
+            cursor: pointer;
+            font-size: 22px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        
+        
+    
+        .info {
+            border: solid 2px #2D6363;
+            border-radius: 3px;
+            resize: none;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 700;
+            background-color: transparent;
+        }
+    
+        .name-email-div {
+            width: 100%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+        }
+    
+        .input-width {
+            width: 100%;
+            height: 35px;
+            font-size: 18px;
+            padding-left: 5px;
+            margin: 10px 0;
+        }
+    
+        .textarea-width {
+            width: 100%;
+            margin: 0;
+            font-size: 18px;
+            padding-left: 5px;
+        }
+
+
+
+
+    }
+
+    @media only screen and (max-width: 400px) {
+        body {
+            background-color: tomato;
+        }
+
+        #rin-logo {
+            font-size: 20px;
+        }
+
+        #intro-header {
+            font-size: 20px;
+        }
+
+        .changing-title {
+            font-size: 18px;
+        }
+
+        
+        .skill-header {
+            text-align: center;
+            letter-spacing: 1px;
+            font-weight: 400;
+            margin-top: 0;
+            font-size: 20px;
+        
+        }
+        
+        .skill-display {
+            display: grid;
+            justify-content: space-evenly;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            text-align: center;
+        }
+        
+        .skills {
+            font-size: 12px;
+            margin: 5px auto;
+        }
+
+        .rinheader {
+            font-size: 25px;
+            text-align: center;    
+        }
+
+        .about-me {
+            padding: 5px 5px;
+        }
+
+        #my-work-section {
+            padding-top: 10px;
+            display: none;
+            max-width: 475px;
+            height: 300px;
+            border-radius: 5px;
+            font-size: 25px;
+            text-align: center;
+        }
+        
+        #me-personally-div {
+            display: none;
+            padding-top: 20px;
+            display: none;
+            max-width: 475px;
+            height: 300px;
+            border-radius: 5px;
+            font-size: 25px;
+            text-align: center;
+        }
+
+        /* NEW BUILD FORM STYLING */
+
+    .new-build-section{
+        text-align: center;
+        padding: 20px;
+    }
+
+    #build-section {
+        font-size: 25px;
+    }
+
+    .step-header {
+        font-size: 22px;
+    }
+
+    .step-title {
+        color: #2D6363;
+        font-size: 20px;
+    }
+
+    .fieldset {
+        max-width: 95%;
+    }
+
+
+
+    .display-options {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .label-styling {
+        width: 100%;
+        position: relative;
+        padding-left: 35px;
+        margin: 15px 0;
+        cursor: pointer;
+        font-size: 22px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    
+    
+
+    .info {
+        border: solid 2px #2D6363;
+        border-radius: 3px;
+        resize: none;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+        background-color: transparent;
+    }
+
+    .name-email-div {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .input-width {
+        width: 100%;
+        height: 35px;
+        font-size: 18px;
+        padding-left: 5px;
+        margin: 10px 0;
+    }
+
+    .textarea-width {
+        width: 100%;
+        margin: 0;
+        font-size: 18px;
+        padding-left: 5px;
+    }
+
+    .info[type=text]:focus {
+        background-color: #fff;
+    }
+
+    .info[type=email]:focus {
+        background-color: #fff;
+    }
+
+    ::placeholder{
+        font-style: italic;
+    }
+
+    .submit-btn {
+        width: 200px;
+        margin-top: 40px;
+        background-color: #2D6363;
+        border: none;
+        border-radius: 5px;
+        padding: 18px;
+        color: #fff;
+        font-size: 18px;
+    }
+
+    .footer-header {
+        font-size: 20px;
+    }
+
+    .contact-me {
+        font-size: 16px;
+    }
+
+    .projects-header {
+        color: #2b2928;
+        padding-top: 35px;
+        font-size: 22px;
+    }
+
+
+    .project-images {
+        width: 275px;
+        border-radius: 5px;
+    }
+
+    #image-change {
+        width: 275px;
+        border-radius: 5px;
+    }
 }
 
-.build-forms-three {
-    width: 600px;   
-}
+@media only screen and (max-width: 300px) {
+    body {
+        background-color: rgb(138, 255, 71);
+  
+    }
 
-.div-input {
-    margin-top: 20px;
-}
+    #intro-header {
+        font-size: 18px;
+    }
 
-.div-notes {
-    width: 600px;
-}
+    .changing-title {
+        font-size: 16px;
+    }
 
-#input-name {
-   
-    width: 200px;
-}
+    .rinheader {
+        font-size: 18px;
+        text-align: center;    
+    }
 
-#input-email {
-    width: 375px;
-}
+    .skills-section {
+        padding: 10px 5px;
+        margin-bottom: 0;
+        
+    }
+    
 
-#input-notes {
-    width: 600px; 
-}
-
-
-.input-label {
-    width: 200px;
-    display: block;
-    position: relative;
-    padding-left: 40px;
-    margin: 10px 0 40px 0;
-  }
-
-.radiomark {
-    top: 0;
-    left: 0;
-    height: 25px;
-    width: 25px;
-  }
-
-  .input-label .radiomark:after {
-    top: 4px;
-   left: 4px;
-   width: 17px;
-   height: 17px;
-}
-/* END OF INPUT FORM SECTION */
-
-}
-
-
-@media only screen and (max-width: 650px) {
+    .skill-header {
+        font-size: 18px;
+    
+    }
 
     .skill-display {
         display: grid;
         justify-content: space-evenly;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
         text-align: center;
     }
-
-    .skills-section {
-        padding: 20px 10px;
-        margin-bottom: 0;
-    }
-
+    
     
     .skills {
-        font-size: 15px;
-        width: 100px;
-        margin: auto;
+        font-size: 10px;
+        margin: 5px auto;
+    }
+
+    #my-work-section {
+        padding-top: 0px;
+        display: none;
+        max-width: 250px;
+        height: 200px;
+        border-radius: 5px;
+        font-size: 20px;
         text-align: center;
     }
-
-    .lets-build-section {
-        padding: 50px 20px;
-     }
-
-    .build-forms {
-        width: 90%;
-        margin: auto;
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
+    
+    #me-personally-div {
+        display: none;
+        padding-top: 0px;
+        display: none;
+        max-width: 250px;
+        height: 200px;
+        border-radius: 5px;
+        font-size: 20px;
+        text-align: center;
     }
     
-    .build-steps {
-        color: #2b2928;
+    #build-section {
         font-size: 22px;
-        width: 80%;
-        margin: 20px auto 20px auto;
-        text-align: center;
+    }
 
-        /* margin-left: 80px; */
+    .about-me {
+        background-color: #fff;
+        padding: 30px 5px;
+    }
+
+    .about-me-container {
+        width: 100%;
+        margin: auto;
+        padding: 0;
+        background-color: #fff;
         
-    }
     
-    .build-forms-three {
-        width: 400px;   
     }
 
-    
-    
-    .div-notes {
-        width: 400px;
+
+    .aboutme-para {
+        font-size: 18px;
     }
 
-    .div-input {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 20px;
+    .project-images {
+        width: 200px;
+        border-radius: 5px;
+        margin: 10px;
     }
+
+
 
     #image-change {
-        max-height: 250px;
+        width: 250px;
         border-radius: 5px;
     }
-    
-
-    #input-name {
-        width: 400px;
-        margin-bottom: 20px;
-        margin-top: 20px;
-    }
-    
-    #input-email {
-        width: 400px;
-    }
-    
-    #input-notes {
-        width: 400px;
-        height: 200px;
-    }
-    
-    
-    .input-label {
-        width: 200px;
-        margin: auto;
-        position: relative;
-        padding-left: 40px;
-        margin: 10px 0 40px 0;
-      }
-    
-    .radiomark {
-        top: 0;
-        left: 0;
-        height: 25px;
-        width: 25px;
-      }
-    
-      .input-label .radiomark:after {
-        top: 4px;
-       left: 4px;
-       width: 17px;
-       height: 17px;
-    }
-
 
 
 }
