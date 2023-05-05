@@ -1,0 +1,14 @@
+body{
+    margin: 0 auto;
+    background-color: #46684c;
+    color: #fff;
+    text-align: center;
+    padding: 10%;
+    font-family: 'Raleway', sans-serif;
+}
+
+.reply{
+    margin-top: 50px;
+    font-family: 'Raleway', sans-serif;
+}
+
