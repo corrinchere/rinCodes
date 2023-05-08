@@ -3,25 +3,20 @@
 body {
     /* background-color: aquamarine; */
     margin: 0 auto;
-    background-color: #bfdbc4;
+    background-color: hsl(131, 28%, 80%);
+    padding: 0;
     
 }
 
-.header {
-    /* background-color: antiquewhite; */
-    text-align: right;
-    margin: 0;
-    background-color: #fff;
-}
 
 #rin-logo {
     font-family: 'Montserrat Alternates', sans-serif;
-    margin-top: 0;
-    margin-right: 10px;
     position: fixed;
-    right: 5px;  
+    margin-right: 10px;
     z-index: 5;
-}
+    right: 0;
+    font-size: 20px;
+} 
 
 .main-section {
     font-family: 'Raleway', sans-serif;
@@ -842,43 +837,51 @@ footer {
     }
 
     @media only screen and (max-width: 400px) {
-        body {
-        }
 
         #rin-logo {
-            font-size: 20px;
-        }
+            font-family: 'Montserrat Alternates', sans-serif;
+            position: fixed;
+            margin-right: 10px;
+            z-index: 5;
+            right: 0;
+            font-size: 18px;
+        } 
 
         #intro-header {
-            font-size: 20px;
-        }
-
-        .changing-title {
             font-size: 18px;
         }
 
-        
-        .skill-header {
-            text-align: center;
-            letter-spacing: 1px;
-            font-weight: 400;
-            margin-top: 0;
-            font-size: 20px;
-        
+        .changing-title {
+            font-size: 16px;
         }
+
         
-        .skill-display {
-            display: grid;
-            justify-content: space-evenly;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            grid-template-rows: 1fr 1fr 1fr;
-            text-align: center;
-        }
+    .skills-section {
+        padding: 10px 5px;
+        margin-bottom: 0;
         
-        .skills {
-            font-size: 12px;
-            margin: 5px auto;
-        }
+    }
+    
+
+    .skill-header {
+        font-size: 18px;
+    
+    }
+
+    .skill-display {
+        display: grid;
+        justify-content: space-evenly;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        text-align: center;
+    }
+    
+    
+    .skills {
+        font-size: 15px;
+        margin: 5px auto;
+    }
+        
 
         .rinheader {
             font-size: 25px;
@@ -892,7 +895,7 @@ footer {
         #my-work-section {
             padding-top: 10px;
             display: none;
-            max-width: 475px;
+            max-width: 350px;
             height: 300px;
             border-radius: 5px;
             font-size: 25px;
@@ -903,7 +906,7 @@ footer {
             display: none;
             padding-top: 20px;
             display: none;
-            max-width: 475px;
+            max-width: 350px;
             height: 300px;
             border-radius: 5px;
             font-size: 25px;
@@ -914,7 +917,7 @@ footer {
 
     .new-build-section{
         text-align: center;
-        padding: 20px;
+        padding: 5px;
     }
 
     #build-section {
@@ -943,7 +946,7 @@ footer {
     }
 
     .label-styling {
-        width: 100%;
+        width: 90%;
         position: relative;
         padding-left: 35px;
         margin: 15px 0;
