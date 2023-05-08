@@ -726,7 +726,6 @@ footer {
     @media only screen and (max-width: 650px) {
 
         body {
-            background-color: thistle;
         }
 
         .skill-display {
@@ -844,7 +843,6 @@ footer {
 
     @media only screen and (max-width: 400px) {
         body {
-            background-color: tomato;
         }
 
         #rin-logo {
@@ -1041,7 +1039,6 @@ footer {
 
 @media only screen and (max-width: 300px) {
     body {
-        background-color: rgb(138, 255, 71);
   
     }
 
